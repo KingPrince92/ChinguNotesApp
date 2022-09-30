@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c3403f1a45.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Chingu Pair Notes App</title>
+  </head>
+  <body>
+    <main>
+      <div class="notes-form">
+        <h1>New Note</h1>
+        <form>
+          <label for="note-title">Title:</label>
+          <input type="text" name="title" id="title" />
+          <label for="text-input">Your Note:</label>
+          <input type="text" name="note-input" id="note-input" />
+          <button class="note-submit">Submit Note</button>
+        </form>
+      </div>
+      <div class="notes-container"></div>
+      <div class="modal hide">
+        <div class="modalholder">
+          <textarea
+            name="edittitle"
+            id="edittitle"
+            cols="30"
+            rows="0"
+          ></textarea>
+          <textarea
+            name="edittext"
+            id="edittext"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="submitEdit">Edit Note</button>
+        </div>
+      </div>
+      <div class="previous-notes">
+        <ul></ul>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
