@@ -1,8 +1,51 @@
-.hide {
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  border-bottom: 2px solid hotpink;
+  margin-bottom: 50px;
+}
+.hidden {
   display: none;
 }
 
-.modalholder {
+.add {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: pink;
+  color: black;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.note {
+  height: 200px;
+  width: 200px;
+  border: 1px solid hotpink;
   display: flex;
   flex-direction: column;
+  background-color: pink;
+  color: black;
+}
+
+.tools {
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  background-color: hotpink;
+}
+
+.tools button {
+  height: 25px;
+  background-color: palevioletred;
+  border: none;
+}
+
+.tools button:hover {
+  background-color: plum;
 }
